@@ -1,0 +1,40 @@
+/* Element Selector */
+
+body{
+    /* To reset the defaults */
+    margin:0;
+    padding:0;
+
+    /* Font style */
+    font-family: 'Recursive', sans-serif;
+
+    /* Background color */
+    /* #EDEBD6 - Cream color code */
+    background-color: #EDEBD6;
+}
+
+.navbar{
+    background-color: #878484;
+    position: fixed;
+    height: 100%;
+}
+
+.navbar li{
+    padding: 10px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    /* To make horizontal navbar */
+    /* display:flex; */
+
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+}
+
+.header{
+    text-align: center;
+}

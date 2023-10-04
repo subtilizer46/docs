@@ -1,0 +1,18 @@
+div{
+    border: 2px solid #000;
+}
+
+/* div{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+} */
+
+div{
+    /* margin:100px; */
+     /* All margins are 100px */
+
+    margin: 100px 200px;
+    /* Top/Bottom - 100px */
+}

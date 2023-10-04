@@ -1,0 +1,16 @@
+.container{
+    width: 500px;
+    border: 1px solid #ccc;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    margin:10px;
+    float: right;
+    background-color: lightblue;
+}
+
+div{
+    text-align: center;
+}

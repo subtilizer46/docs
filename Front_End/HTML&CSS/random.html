@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="random"> </p>
+    <p id="random1"> </p>
+    <p id="random2"> </p>
+    <p id="random3"> </p>
+    <p id="random4"> </p>
+    <p id="random5"> </p>
+
+    <script>
+        items=['apple','banana','cherry']
+        document.getElementById("random").innerHTML=items[Math.floor(Math.random()*items.length)]
+
+        document.getElementById("random1").innerHTML=Math.floor(Math.random()*10)
+        //  Between 0 and 9
+
+        document.getElementById("random2").innerHTML=Math.floor(Math.random()*101)
+        //  Between 0 and 100
+
+        document.getElementById("random3").innerHTML=Math.floor((Math.random()*100)+1)
+        //  Between 1 and 100
+
+        document.getElementById("random4").innerHTML=Math.floor((Math.random()*6)+1)
+        //  Between 1 and 6
+
+        document.getElementById("random5").innerHTML=Math.random()
+        // Output will be like 0.1441833783756883
+        //  Between 0 and 1
+    </script>
+</body>
+</html>

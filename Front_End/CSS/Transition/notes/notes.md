@@ -1,0 +1,1 @@
+1. It will change the property over a given duration.

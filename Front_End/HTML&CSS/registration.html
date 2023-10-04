@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <style>
+        body {
+            background: red;
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            text-align: center;
+            height: auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <label><b>Enter Username:</b></label>
+            <input type="text"><br>
+
+            <label for="email"><b>Enter Email:</b></label>
+            <input type="email"><br>
+
+            <label for="password"><b>Enter Password:</b></label>
+            <input type="password"><br>
+
+            <label for="mobile"><b>Enter Mobile Number:</b></label>
+            <input type="tel"><br>
+
+            <label for="courses"><b>Select a Course:</b></label>
+            <select>
+                <option value="course1">Science</option>
+                <option value="course2">Arts</option>
+                <option value="course3">Commerce</option>
+            </select>
+            <br>
+
+            <label>Gender:</label>
+            <input type="radio" value="male">
+            <label>Male</label>
+            <input type="radio" value="female">
+            <label>Female</label>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

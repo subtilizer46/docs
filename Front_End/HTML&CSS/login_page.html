@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        button:hover{
+            color:dodgerblue;
+            background-color:lightsalmon;
+        }
+    </style>
+</head>
+<body style="text-align: center; background-color: aliceblue;">
+    <div class="container">
+        <h2>Login</h2>
+        <form action="" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <br>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="remember_me"> Remember Me
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="btn" style="background-color: beige; border-radius: 10%;"><b>Login</b></button>
+            </div>
+        </form>
+        <p>Don't have an account? <a href="signup_page.html">Create New Account</a></p>
+    </div>
+</body>
+</html>

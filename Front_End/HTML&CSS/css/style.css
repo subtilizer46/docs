@@ -1,0 +1,19 @@
+#b1{
+    padding: 50px;
+    border: solid;
+    border-color: blue;
+    background-color: lightgray;
+    width: 500px;
+    height: 150px;
+    text-align: center;
+}
+
+#b2{
+    padding: 50px;
+    border: solid;
+    border-color: blue;
+    background-color: lightgray;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+}

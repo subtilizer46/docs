@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country Dropdown with API</title>
+</head>
+<body>
+    <h1>Select a Country:</h1>
+    <select id="countryDropdown">
+        <option value="">Select a country</option>
+    </select>
+    <script>
+        const select = document.getElementById("countryDropdown");
+        // Fetch the list of countries from the Rest Countries API
+        fetch("https://restcountries.com/v3.1/all")
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(country => {
+                    const option = document.createElement("option");
+                    option.value = country.name.common;
+                    option.text = country.name.official;
+                    select.appendChild(option);
+                });
+            })
+            .catch(error => console.error(error));
+    </script>
+</body>
+</html>

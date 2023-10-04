@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="textElement"> India </p>
+    <button id="colorButton">Change color</button>
+
+    <!-- InternalJS -->
+    <script>
+       var ptext = document.getElementById("textElement");
+       var btext = document.getElementById("colorButton");
+
+       btext.onclick=function(){
+        ptext.style.color="blue";
+       }
+
+    </script>
+</body>
+</html>

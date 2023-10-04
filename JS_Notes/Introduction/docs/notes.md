@@ -1,0 +1,1 @@
+* Semicolor in js are optional

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Time API</h1>
+    <button onclick="fetchTime()">Click here</button>
+    <div id="time"></div>
+
+    <h1> Date API</h1>
+    <button onclick="fetchDate()">Click here</button>
+    <div id="date"></div>
+
+    <h1> DAY API</h1>
+    <button onclick="fetchDay()">Click here</button>
+    <div id="day"></div>
+
+    <script>
+        function fetchTime(){
+            fetch('https://worldtimeapi.org/api/ip')
+            .then(response => response.json())
+            .then(data=>{
+                const timeDiv = document.getElementById('time');
+                const timeString = new Date(data.utc_datetime);
+                const formattedTime = timeString.toLocaleTimeString();
+                timeDiv.innerHTML=formattedTime;
+
+            })
+        }
+
+        function fetchDate(){
+            fetch('https://worldtimeapi.org/api/ip')
+            .then(response => response.json())
+            .then(data=>{
+                const dateDiv = document.getElementById('date');
+                const timeString = new Date(data.utc_datetime);
+                const formattedTime = timeString.toLocaleDateString();
+                dateDiv.innerHTML=formattedTime;
+
+            })
+        }
+
+        function fetchDay(){
+            fetch('https://worldtimeapi.org/api/ip')
+            .then(response => response.json())
+            .then(data=>{
+                const dayDiv = document.getElementById('day');
+                const timeString = new Date(data.utc_datetime);
+
+                const option = {weekday:'long'}
+                const formattedTime = timeString.toLocaleDateString('mr-IN',option);
+                dayDiv.innerHTML=formattedTime;
+
+            })
+        }
+    </script>
+</body>
+</html>
+
+<!-- News API -->
+<!-- Job API -->
+<!-- GoogleMap API -->
+<!-- Covid Data API -->

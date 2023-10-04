@@ -1,0 +1,25 @@
+h1{
+    font-family: cursive;
+}
+
+p{
+    font-size: 40px;
+    font-weight: bold;
+    /* font-variant: small-caps; */
+}
+
+.nepal{
+    text-transform: lowercase;
+}
+
+.usa{
+    text-transform: uppercase;
+}
+
+.nepal{
+    letter-spacing: 20px;
+}
+
+.usa{
+    text-decoration: underline;
+}
