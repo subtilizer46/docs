@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block form %}
+<form method="POST" action="/add">
+  <label for="namec" class="form-label">Enter Name:</label>
+  <input type="text" id="namec" name="namec" class="form-control"><br>
+
+  <label for="mobile" class="form-label">Enter Mobile:</label>
+  <input type="number" id="mobile" name="mobile" class="form-control"><br>
+
+  <label for="id" class="form-label">Enter ID:</label>
+  <input type="number" id="id" name="id" class="form-control"><br>
+
+  <label for="address" class="form-label">Enter Address:</label>
+  <input type="text" id="address" name="address" class="form-control"><br>
+
+  <input type="submit" value="Submit" class="btn btn-primary">
+</form><br>
+{% endblock %}

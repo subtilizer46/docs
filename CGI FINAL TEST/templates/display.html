@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block style %}
+<style>
+    li {
+      list-style: none;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  
+    li b {
+      font-weight: bold;
+      color: #333; 
+    }
+  
+    li span {
+      font-weight: normal;
+    }
+  </style>
+{% endblock %}
+    
+{% block display %}
+<h1>Data</h1>
+<ul>
+    {% for item in data %}
+        <li><b>ID: </b> {{ item._id }}, <b>Name:</b> {{ item.name }}, <b>Mobile:</b> {{ item.mobile }}, <b>Address: </b> {{ item.address }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
